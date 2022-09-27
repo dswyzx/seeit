@@ -1,15 +1,217 @@
-<html>
+<!doctype html>
+<html lang="zh">
 <head>
-<title>see it</title>
+    <title>look at it</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="StyleSheet" href="css/reset.css" />
+    <style type="text/css">
+        body {
+        }
+
+        .item-title {
+            width: 100px;
+            padding: 4px;
+            line-height: 1.8;
+        }
+
+        .item-content {
+            padding: 4px;
+            line-height: 1.8;
+        }
+
+        li {
+            padding: 7px 0px;
+        }
+
+        .item-wrap {
+            display: -moz-box;
+            display: -webkit-box;
+            display: box;
+            padding: 6px 0px;
+            border-bottom: solid 1px #aaa;
+            margin-bottom: 6px;
+            width: 100%;
+        }
+
+        .item-box-left {
+            width: 100px;
+        }
+
+        .item-box-right {
+            width: 700px;
+        }
+
+        .item-title-hl {
+            font-size: 18px;
+            padding: 4px;
+            background-color: #ddd;
+            border-bottom: solid 2px #ccc;
+        }
+
+        .project-title {
+            font-size: 18px;
+            line-height: 1.8;
+            padding: 4px;
+        }
+
+        .project-sub-title {
+            padding: 4px;
+            line-height: 1.8;
+            width: 70px;
+        }
+
+        #goTop {
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            width: 32px;
+            height: 32px;
+            -webkit-box-reflect: below 0px -webkit-gradient(linear, center top, center bottom, from(transparent),color-stop(0.2, transparent), to(white));
+            opacity: 0.5;
+        }
+
+        .reflect {
+            width: 32px;
+            height: 32px;
+            -webkit-transform: scaleY(-1);
+            -moz-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+            filter: alpha(opacity='80');
+            opacity: 0.8;
+        }
+
+        .shadow {
+            position: relative;
+            top: -32px;
+            left: 0px;
+            height: 32px;
+            width: 32px;
+            background-image: -moz-linear-gradient(center bottom, rgb(227,227,227) 30%, rgba(255,255,255,0) 100%);
+            background-image: -webkit-gradient(linear, center bottom, center top, color-stop(0.3, rgb(227,227,227)), color-stop(0.7, rgba(255,255,255,0)));
+            filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColor=#e8e8e8, EndColorStr=#ffffff);
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+        }
+    </style>
+
 </head>
+<body style="margin:0px auto;width:800px;">
+    <header>
+        <h1 style="color:#e8e8e8; font-size: 30px; font-weight:bold;text-align:right;text-shadow: 2px 2px 2px #333, 0px 0px 5px #666; margin-top:15px;">west</h1>
+        <section style="padding:6px 0px;">
+            <hr />
+        </section>
+    </header>
+    <article style="padding:10px 0px;">
+        <section>
+            <table style="width:100%">
+                <tr>
+                    <td class="item-title">电话：</td>
+                    <td class="item-content">09272454564</td>
+                    <td class="item-title">邮箱：</td>
+                    <td class="item-content">
+                        <a title="给我发邮件" href="mailto:dswyzx@live.com">dswyzx@live.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item-title">性别：</td>
+                    <td class="item-content">男</td>
+                    <td class="item-title">年龄：</td>
+                    <td class="item-content">32</td>
+                </tr>
+            </table>
+        </section>
+        <section style="margin:4px 0px; height:2px; background-color:#888;"></section>
+        <section class="item-wrap">
+            <section class="item-box-left">
+                <span class="item-title-hl">专业技能</span>
+            </section>
+            <section class="item-box-right">
+                <ul>
+                    <li>熟练使用C#语言进行项目开发</li>
+                    <li>熟练使用各种关系型数据库，熟悉常用SQL DDL、DML语句，熟悉索引及存储过程</li>
+                    <li>熟悉使用Redis,Mongodb等Nosql</li>
+                    <li>熟练掌握win,linux运维操作,使用docker部署服务,使用ELK处理日志</li>
+                </ul>
+            </section>
+        </section>
+        <section class="item-wrap">
+            <section class="item-box-left">
+                <span class="item-title-hl">教育经历</span>
+            </section>
+            <section class="item-box-right" style="margin-bottom:10px;">
+                <table>
+                    <tr>
+                        <td style="width:150px;">2008~2012</td>
+                        <td style="width:250px;">河南理工大学</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class="item-wrap">
+            <section class="item-box-left">
+                <span class="item-title-hl">工作经历</span>
+            </section>
+            <section class="item-box-right">
+                <table>
+                    <tr>
+                        <td style="width:150px;">2019~至今</td>
+                        <td style="width:250px;">一家网络科技公司</td>
+                        <td>程序开发</td>
+                    </tr>
+                    <tr>
+                        <td>2017~2019</td>
+                        <td>赞华（中国）电子系统有限公司</td>
+                        <td>程序开发</td>
+                    </tr>
+                    <tr>
+                        <td>2014~2017</td>
+                        <td>海虹控股</td>
+                        <td>程序开发</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section class="item-wrap">
+            <section class="item-box-left">
+                <span class="item-title-hl">项目经验</span>
+            </section>
+            <section class="item-box-right">
+                <section>
+                    <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+                        <tr>
+                            <td colspan="2" class="project-title">当前公司</td>
+                        </tr>
+                        <tr>
+                            <td class="project-sub-title" valign="top">项目描述:</td>
+                            <td class="item-content">支撑并完成公司对接其他平台项目的工作,包括数据对接,业务整合</td>
+                        </tr>
+                        <tr>
+                            <td class="project-sub-title" valign="top">使用技术:</td>
+                            <td class="item-content">.net4.X,dotnetcore 3.1 等c#语言版本下搭建并完成各webapi项目,MVC项目,各种关系型非关系型数据库,rabbitmq数据管道,elk日志整合</td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </section>
+        <section class="item-wrap">
+            <section class="item-box-left">
+                <span class="item-title-hl">自我评价</span>
+            </section>
+            <section class="item-box-right" style="margin-bottom:10px;">
+                <ul>
+                    <li>做事认真负责,有钻研精神.</li>
+                    <li>擅长思考挖掘所负责事项,并完善之.</li>
+                </ul>
+            </section>
+        </section>
+    </article>
 
-<body>
-<h1>标题</h1></br>
-
-<div >阿斯顿<input id="input" value="asd11"></input></div>
-<button id="seeit" >按钮</button>
 </body>
-  <script src="here.js"> 
-  </script>
-
 </html>
